@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Domingo - Indian Fast Food</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #ff6b35;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .search-bar input {
+      padding: 6px 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+
+    .hero {
+      background: url('hero.jpg') center/cover no-repeat;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      background-color: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 2.5rem;
+    }
+
+    .section {
+      padding: 50px 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #ff6b35;
+    }
+
+    .dishes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .dish {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .dish img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .dish h3 {
+      margin: 15px 0 10px;
+    }
+
+    .about {
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    .testimonials {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .testimonial {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 300px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .testimonial img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Domingo</h1>
+    <h2>Performed at J D College of Engineering</h2>
+    <nav>
+      <a href="#cuisines">Menu</a>
+      <a href="#about">About</a>
+      <a href="#testimonials">Reviews</a>
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+  </section>
+
+  <section class="section" id="cuisines">
+    <h2>Popular Indian Dishes</h2>
+    <div class="dishes">
+      <div class="dish">
+        <img src="butter_chicken.jpg" alt="Butter Chicken">
+        <h3>Butter Chicken</h3>
+      </div>
+      <div class="dish">
+        <img src="panner_tikka.jpg" alt="Paneer Tikka">
+        <h3>Paneer Tikka</h3>
+      </div>
+      <div class="dish">
+        <img src="dosa.jpg" alt="Masala Dosa">
+        <h3>Masala Dosa</h3>
+      </div>
+      <div class="dish">
+        <img src="pav_bhaji.jpg" alt="Pav Bhaji">
+        <h3>Pav Bhaji</h3>
+      </div>
+      <div class="dish">
+        <img src="cb.jpg" alt="Chole Bhature">
+        <h3>Chole Bhature</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <h2>About Domingo</h2>
+    <p>Domingo is your go-to spot for mouth-watering, spicy, and soul-satisfying Indian fast food. From North to South and East to West, we bring India's flavors under one roof—quick, affordable, and authentic.</p>
+  </section>
+
+  <section class="section" id="testimonials">
+    <h2>What People Say</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <img src="girl.jpg" alt="User 1">
+        <p>"Domingo's pav bhaji is next-level! Tastes just like Mumbai street style!"</p>
+        <strong>– Anjali </strong>
+      </div>
+      <div class="testimonial">
+        <img src="man.jpg" alt="User 2">
+        <p>"Masala Dosa was crispy and perfect! Fast delivery too."</p>
+        <strong>– Rohan </strong>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Domingo. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
